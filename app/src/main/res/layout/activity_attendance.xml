@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#FFFFFF">
+
+    <!-- Título principal -->
+    <TextView
+        android:id="@+id/attendanceTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro de Asistencia"
+        android:textSize="28sp"
+        android:textColor="#1DF2EE"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:gravity="center" />
+
+    <!-- Instrucción al usuario -->
+    <TextView
+        android:id="@+id/attendanceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coloca tu huella para registrar la asistencia"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="32dp"
+        android:gravity="center" />
+
+    <!-- Icono de huella -->
+    <ImageView
+        android:id="@+id/fingerprintIcon"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/huella"
+        app:tint="#1DF2EE"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Botón de salir -->
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        android:backgroundTint="#1DF2EE"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:padding="14dp"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp" />
+</LinearLayout>

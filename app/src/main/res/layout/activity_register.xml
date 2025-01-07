@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/registerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registro"
+            android:textSize="24sp"
+            android:textColor="#1DF2EE"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Campo de nombre completo -->
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre Completo"
+            android:background="@drawable/rounded_edittext"
+            android:padding="16dp"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Campo de correo electrónico -->
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo Electrónico"
+            android:background="@drawable/rounded_edittext"
+            android:padding="16dp"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Campo de contraseña -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:background="@drawable/rounded_edittext"
+            android:padding="16dp"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Botón de registro -->
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            android:backgroundTint="#1DF2EE"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:padding="16dp" />
+    </LinearLayout>
+</ScrollView>
