@@ -44,7 +44,7 @@ public class RegisterActivity extends AppCompatActivity {
         String userEmail = email.getText().toString().trim();
         String userPassword = password.getText().toString().trim();
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://192.168.1.72/api_asistencia/register.php",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://192.168.2.34/api_asistencia/register.php",
                 response -> Toast.makeText(RegisterActivity.this, response, Toast.LENGTH_SHORT).show(),
                 error -> Toast.makeText(RegisterActivity.this, "Error: " + error.getMessage(), Toast.LENGTH_SHORT).show()) {
             @Override
