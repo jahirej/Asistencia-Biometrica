@@ -68,7 +68,7 @@ public class AttendanceActivity extends AppCompatActivity {
     }
 
     private void registerAttendance(int userId) {
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://192.168.1.72/api_asistencia/attendance.php",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://192.168.2.34/api_asistencia/attendance.php",
                 response -> {
                     if (response.trim().equals("Asistencia registrada")) {
                         Toast.makeText(
